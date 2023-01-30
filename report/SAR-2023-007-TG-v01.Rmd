@@ -66,21 +66,21 @@ source("scripts/results.R", encoding = 'UTF-8')
 
 # Metodologia
 
-<!-- Os procedimentos de limpeza de dados, desenho do estudo e métodos de análise usados neste relatório estão descritos no documento anexo **SAP-2023-007-TG-v01**. -->
+Os procedimentos de limpeza de dados, desenho do estudo e métodos de análise usados neste relatório estão descritos no documento anexo **SAP-2023-007-TG-v01**.
 
-## Parâmetros do estudo
+<!-- ## Parâmetros do estudo -->
 
-### Desenho do estudo
+<!-- ### Desenho do estudo -->
 
-### Critérios de inclusão e exclusão
+<!-- ### Critérios de inclusão e exclusão -->
 
-### Exposições
+<!-- ### Exposições -->
 
-### Desfechos
+<!-- ### Desfechos -->
 
-### Covariáveis
+<!-- ### Covariáveis -->
 
-## Análises Estatísticas
+<!-- ## Análises Estatísticas -->
 
 Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
 
