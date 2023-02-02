@@ -1,7 +1,7 @@
 ---
 title: "[title]"
 subtitle: 'DOCUMENTO: SAR-2023-007-TG-v01'
-author: '**De:** Felipe Figueiredo **Para:** ___'
+author: '**De:** Felipe Figueiredo **Para:** Teresa Gutman'
 date: "`r Sys.Date()`"
 output:
   html_document:

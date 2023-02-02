@@ -37,8 +37,8 @@ tags:
 
 Objetivo
 
-Análise Estatística para PESSOA (LOCAL, yyyy)
-<!-- Relatório técnico para PESSOA (LOCAL, yyyy) -->
+Análise Estatística para Teresa Gutman (Doutorado UFF, 2023)
+<!-- Relatório técnico para PESSOA (Doutorado UFF, 2023) -->
 
 ## Análises realizadas
 
