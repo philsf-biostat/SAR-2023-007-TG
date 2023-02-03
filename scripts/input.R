@@ -11,9 +11,9 @@ library(labelled)
 
 # data loading ------------------------------------------------------------
 set.seed(42)
-data.raw <- tibble(id=gl(2, 10), exposure = gl(2, 10), outcome = rnorm(20))
-# data.raw <- read_excel("dataset/file.xlsx") %>%
-#   janitor::clean_names()
+# data.raw <- tibble(id=gl(2, 10), exposure = gl(2, 10), outcome = rnorm(20))
+data.raw <- read_excel("dataset/Dados tese Teresa.xlsx") %>%
+  janitor::clean_names()
 
 Nvar_orig <- data.raw %>% ncol
 Nobs_orig <- data.raw %>% nrow
@@ -22,6 +22,8 @@ Nobs_orig <- data.raw %>% nrow
 
 data.raw <- data.raw %>%
   rename(
+    id = caso,
+    exposure = ivl,
   ) %>%
   select(
     everything(),
@@ -35,15 +37,15 @@ data.raw <- data.raw %>%
 
 data.raw <- data.raw %>%
   mutate(
-    id = factor(id), # or as.character
+    id = as.character(id), # or as.factor
   )
 
 # labels ------------------------------------------------------------------
 
 data.raw <- data.raw %>%
   set_variable_labels(
-    exposure = "Study exposure",
-    outcome = "Study outcome",
+    exposure = "IVL",
+    # outcome = "Study outcome",
   )
 
 # analytical dataset ------------------------------------------------------
@@ -52,9 +54,10 @@ analytical <- data.raw %>%
   # select analytic variables
   select(
     id,
-    exposure,
-    outcome,
+    # exposure,
+    # outcome,
     everything(),
+    -diagnostico,
   )
 
 Nvar_final <- analytical %>% ncol
