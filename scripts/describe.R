@@ -12,7 +12,7 @@ library(gt)
 
 theme_ff_gtsummary()
 theme_gtsummary_compact()
-# theme_gtsummary_language(language = "pt") # traduzir
+theme_gtsummary_language(language = "pt") # traduzir
 
 # exploratory -------------------------------------------------------------
 
