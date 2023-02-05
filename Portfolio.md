@@ -7,32 +7,10 @@ redirect_from:
   - /SAR-2023-007-TG/
   - /SAR-2023-007/
 categories:
-  - case-control
   - cross-sectional
-  - longitudinal-studies
-  - cohort
-  - clinical-trial
-  - ecological
   - epidemiology
-  - bioassay
-  - systematic-review
-  - technical-report
-  - data-product
 tags:
   - prevalence
-  - incidence
-  - diagnostic-models
-  - prognostic-models
-  - imputation-models
-  - survival-analysis
-  - efficacy
-  - concordance-analysis
-  - survey
-  - meta-analysis
-  - decision-trees
-  - machine-learning
-  - unsupervised-learning
-  - data-instrument
 ---
 
 Objetivo
@@ -44,9 +22,6 @@ Análise Estatística para Teresa Gutman (Doutorado UFF, 2023)
 
 1. Análise descritiva
 1. Análise inferencial
-1. Análise de poder
-1. Imputação de dados faltantes
-1. Modelagem estatística
 
 ## Documentos
 

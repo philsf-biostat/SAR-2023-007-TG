@@ -9,9 +9,6 @@ Análise Estatística para Teresa Gutman (Doutorado UFF, 2023)
 
 1. Análise descritiva
 1. Análise inferencial
-1. Análise de poder
-1. Imputação de dados faltantes
-1. Modelagem estatística
 
 ## Documentos
 
