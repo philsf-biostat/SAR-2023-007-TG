@@ -38,6 +38,10 @@ data.raw <- data.raw %>%
 data.raw <- data.raw %>%
   mutate(
     id = as.character(id), # or as.factor
+    exposure = as.character(exposure),
+    obito = as.character(obito),
+    grau = as.character(grau),
+    cm = as.character(cm),
   )
 
 # labels ------------------------------------------------------------------
