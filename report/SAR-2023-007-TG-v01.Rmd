@@ -138,6 +138,10 @@ Todas as distribuições apresentam uma assimetria com cauda longa à direita, o
 
 ## Análise inferencial
 
+A DVL IT foi significativamente diferente entre os grupos
+(`r inline_text(tab_inf, dvl_it, column = p.value)`).
+Ambos os grupos parecem ter ocorrências semelhantes de DVL PT e mortalidade (Tabela 2).
+
 ```{r tab_inf}
 tab_inf %>%
     as_kable(
