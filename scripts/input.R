@@ -57,7 +57,7 @@ data.raw <- data.raw %>%
     dvl_pt= "DVL (PT)",
     p_t = "pT",
     p_m = "pM",
-    p_n = "pM",
+    p_n = "pn",
     tu = "Tamanho do tumor (mm)",
     num_linf = "Número de linfonodos",
     ki67 = "KI67",
