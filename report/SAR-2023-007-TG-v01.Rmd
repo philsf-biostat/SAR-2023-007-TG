@@ -193,6 +193,8 @@ O número de linfonodos e o tamanho do tumor foram maiores no grupo IVL em rela�
 
 ## Análise exploratória de dados
 
+N/A
+
 ```{r A1, fig.cap="**Figura A1** Distribuição da idade na população do estudo."}
 # ![Age](../figures/distr_age.png)
 # knitr::include_graphics("../figures/distr_age.png", error = FALSE)
