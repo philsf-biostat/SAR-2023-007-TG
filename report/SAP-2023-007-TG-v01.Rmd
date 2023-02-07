@@ -153,7 +153,7 @@ Não estão planejadas análises multivariadas que ajustam as estimativas por co
 
 O perfil epidemiológico dos participantes do estudo será descrito na baseline.
 As características demográficas
-(sexo, idade e IMC)
+<!-- (sexo, idade e IMC) -->
 e clínicas
 <!-- ( [vars] ) -->
 serão descritas como
@@ -166,18 +166,14 @@ As distribuições das características dos participantes serão resumidas em ta
 
 Todas as comparações entre os grupos serão avaliadas como análises univariadas.
 Variáveis contínuas serão comparadas entre os grupos com o
-teste t de grupos independentes com a correção de Welch.
-<!-- teste t pareado. -->
-<!-- teste de Mann-Whitney. -->
-<!-- teste de Wilcoxon. -->
+teste t de grupos independentes com a correção de Welch ou com
+o de soma de postos de Wilcoxon (Mann-Whitney).
 Diferenças nas distribuições de variáveis categóricas serão avaliadas com o teste
 exato de Fisher.
-<!-- qui-quadrado. -->
-<!-- McNemar. -->
-
-<!-- Todas as análises inferenciais serão realizadas com base nos modelos estatísticos (descritos na próxima seção). -->
 
 ### Modelagem estatística
+
+N/A
 
 ### Dados faltantes
 
@@ -190,8 +186,6 @@ As frequências e proporções de dados faltantes serão reportadas em tabelas.
 Todas as análises serão realizadas ao nível de significância de 5%.
 Todos os testes de hipóteses e intervalos de confiança calculados serão
 bicaudais.
-<!-- unicaudais à esquerda. -->
-<!-- unicaudais à direita. -->
 
 ## Tamanho da amostra e Poder
 
