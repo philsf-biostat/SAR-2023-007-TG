@@ -149,6 +149,13 @@ tab_inf %>%
   )
 ```
 
+A distribuição do grau do tumor foi significativamente diferente entre os grupos
+<!-- com todos os participantes IVL positivos apresentando grau maior que zero -->
+(`r inline_text(tab_inf, grau, column = p.value)`), assim como os estadiamentos
+pT (`r inline_text(tab_inf, p_t, column = p.value)`) e
+pN (`r inline_text(tab_inf, p_n, column = p.value)`).
+O tamanho do tumor e o número de linfonodos parecem ser maiores no grupo IVL positivo.
+
 # Observações e limitações
 
 # Conclusões
