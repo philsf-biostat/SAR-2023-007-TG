@@ -2,7 +2,7 @@
 title: "[title]"
 subtitle: 'DOCUMENTO: SAR-2023-007-TG-v01'
 author: '**De:** Felipe Figueiredo **Para:** Teresa Gutman'
-date: "`r Sys.Date()`"
+date: "2023-02-06"
 output:
   html_document:
     fig_caption: yes
