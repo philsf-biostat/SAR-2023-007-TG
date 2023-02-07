@@ -108,7 +108,7 @@ e a maior parte da amostra não experimentou ocorrência de metástase à distâ
 ```{r tab_desc}
 tab_desc %>%
     as_kable(
-    caption = "**Tabela 1** caption"
+    caption = "**Tabela 1** Características dos participantes incluídos no estudo."
   )
 ```
 
@@ -117,12 +117,12 @@ A mortalidade (obito), pM e CM=4 apresentam distribuições semelhantes em ambos
 O grau 0 do tumor não foi observado no grupo livre de IVL, assim como o estadiamento pT=T0.
 Apenas `r inline_text(tab_inf, p_n, level = "N0", column = stat_2)` participante tinha estadiamento pN=N0 no grupo com IVL.
 
-```{r fig1, fig.cap="**Figura 1** caption"}
+```{r fig1, fig.cap="**Figura 1** Distribuição de ocorrência de cada CM=4, grau do tumor, mortalidade (óbito), e indicadores de estadiamento (pM, pN e pT)."}
 # ![Age](../figures/outcome.png)
 knitr::include_graphics("../figures/cat.png", error = FALSE)
 ```
 
-```{r fig2, fig.cap="**Figura 2** caption"}
+```{r fig2, fig.cap="**Figura 2** Densidade de distribuição da DVL, KI67, número de linfonodos et tamanho do tumor."}
 # ![Age](../figures/outcome.png)
 knitr::include_graphics("../figures/num.png", error = FALSE)
 ```
@@ -141,7 +141,7 @@ Todas as distribuições apresentam uma assimetria com cauda longa à direita, o
 ```{r tab_inf}
 tab_inf %>%
     as_kable(
-    caption = "**Tabela 2** caption"
+    caption = "**Tabela 2** Comparação entre os indicadores entre os grupos livre de IVL e IVL positivo."
   )
 ```
 
