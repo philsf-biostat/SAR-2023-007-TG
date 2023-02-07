@@ -50,6 +50,17 @@ data.raw <- data.raw %>%
   set_variable_labels(
     exposure = "IVL",
     # outcome = "Study outcome",
+    obito = "Óbito",
+    grau = "Grau",
+    cm = "CM=4",
+    dvl_it = "DVL (IT)",
+    dvl_pt= "DVL (PT)",
+    p_t = "pT",
+    p_m = "pM",
+    p_n = "pM",
+    tu = "Tamanho do tumor (mm)",
+    num_linf = "Número de linfonodos",
+    ki67 = "KI67",
   )
 
 # analytical dataset ------------------------------------------------------
