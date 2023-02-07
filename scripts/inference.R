@@ -17,7 +17,7 @@ tab_inf <- analytical %>%
   # add_p: quick and dirty
   add_p(
     # use Fisher test (defaults to chi-square)
-    test = all_categorical() ~ "fisher.test",
+    test = list(all_categorical() ~ "fisher.test", all_continuous() ~ "wilcox.test"),
     # use 3 digits in pvalue
     pvalue_fun = function(x) style_pvalue(x, digits = 3),
   ) %>%
