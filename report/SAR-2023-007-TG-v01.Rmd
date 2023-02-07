@@ -97,7 +97,12 @@ tab_desc %>%
 
 ```{r fig1, fig.cap="**Figura 1** caption"}
 # ![Age](../figures/outcome.png)
-# knitr::include_graphics("../figures/outcome.png", error = FALSE)
+knitr::include_graphics("../figures/cat.png", error = FALSE)
+```
+
+```{r fig2, fig.cap="**Figura 2** caption"}
+# ![Age](../figures/outcome.png)
+knitr::include_graphics("../figures/num.png", error = FALSE)
 ```
 
 ## Análise inferencial
