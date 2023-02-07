@@ -69,8 +69,8 @@ analytical <- data.raw %>%
   # select analytic variables
   select(
     id,
-    # exposure,
-    # outcome,
+    exposure,
+    obito,
     everything(),
     -diagnostico,
   )
