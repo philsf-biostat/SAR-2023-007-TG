@@ -5,6 +5,10 @@ ff.col <- "steelblue" # good for single groups scale fill/color brewer
 ff.pal <- "Paired"    # good for binary groups scale fill/color brewer
 
 gg <- analytical %>%
+  mutate(
+    obito = factor(obito, labels = c("Não", "Óbito")),
+    exposure = factor(exposure, labels = c("Sem invasão", "IVL")),
+    ) %>%
   select(-id) %>%
   pivot_longer(
     -c(exposure, dvl_it, dvl_pt, tu, num_linf, ki67),
@@ -12,7 +16,7 @@ gg <- analytical %>%
     values_to = "values_cat",
     ) %>%
   pivot_longer(
-    -where(is.character),
+    where(is.numeric),
     names_to = "names_num",
     values_to = "values_num",
     ) %>%
