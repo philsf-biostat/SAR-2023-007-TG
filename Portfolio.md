@@ -1,52 +1,27 @@
 ---
-title: '[title]'
-date: ""
+title: 'Associação entre invasão vascular linfática na mortalidade e densidade vascular linfática em pacientes com câncer de mama: estudo transversal'
+date: "2023-02-06"
 permalink: /portfolio/SAR-2023-007/
 redirect_from:
   - /portfolio/SAR-2023-007-TG/
   - /SAR-2023-007-TG/
   - /SAR-2023-007/
 categories:
-  - case-control
   - cross-sectional
-  - longitudinal-studies
-  - cohort
-  - clinical-trial
-  - ecological
   - epidemiology
-  - bioassay
-  - systematic-review
-  - technical-report
-  - data-product
 tags:
   - prevalence
-  - incidence
-  - diagnostic-models
-  - prognostic-models
-  - imputation-models
-  - survival-analysis
-  - efficacy
-  - concordance-analysis
-  - survey
-  - meta-analysis
-  - decision-trees
-  - machine-learning
-  - unsupervised-learning
-  - data-instrument
 ---
 
 Objetivo
 
-Análise Estatística para PESSOA (LOCAL, yyyy)
-<!-- Relatório técnico para PESSOA (LOCAL, yyyy) -->
+Análise Estatística para Teresa Gutman (Doutorado UFF, 2023)
+<!-- Relatório técnico para PESSOA (Doutorado UFF, 2023) -->
 
 ## Análises realizadas
 
 1. Análise descritiva
 1. Análise inferencial
-1. Análise de poder
-1. Imputação de dados faltantes
-1. Modelagem estatística
 
 ## Documentos
 

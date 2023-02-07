@@ -12,12 +12,12 @@ tab_inf <- analytical %>%
   # include study N
   add_overall() %>%
   # pretty format categorical variables
-  # bold_labels() %>%
+  bold_labels() %>%
   # bring home the bacon! (options: add_p or add_difference)
   # add_p: quick and dirty
   add_p(
     # use Fisher test (defaults to chi-square)
-    test = all_categorical() ~ "fisher.test",
+    test = list(all_categorical() ~ "fisher.test", all_continuous() ~ "wilcox.test"),
     # use 3 digits in pvalue
     pvalue_fun = function(x) style_pvalue(x, digits = 3),
   ) %>%

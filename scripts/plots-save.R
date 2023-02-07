@@ -1,5 +1,5 @@
 # setup -------------------------------------------------------------------
-height <- 12
+height <- 16
 width <- 12
 units <- "cm"
 
@@ -13,4 +13,5 @@ units <- "cm"
 
 # save plots --------------------------------------------------------------
 
-ggsave(filename = "figures/outcome.png", plot = gg.outcome, height = height, width = width, units = units)
+ggsave(filename = "figures/num.png", plot = gg.num, height = height, width = width, units = units)
+ggsave(filename = "figures/cat.png", plot = gg.cat, height = height, width = width, units = units)

@@ -11,9 +11,9 @@ library(labelled)
 
 # data loading ------------------------------------------------------------
 set.seed(42)
-data.raw <- tibble(id=gl(2, 10), exposure = gl(2, 10), outcome = rnorm(20))
-# data.raw <- read_excel("dataset/file.xlsx") %>%
-#   janitor::clean_names()
+# data.raw <- tibble(id=gl(2, 10), exposure = gl(2, 10), outcome = rnorm(20))
+data.raw <- read_excel("dataset/Dados tese Teresa.xlsx") %>%
+  janitor::clean_names()
 
 Nvar_orig <- data.raw %>% ncol
 Nobs_orig <- data.raw %>% nrow
@@ -22,6 +22,8 @@ Nobs_orig <- data.raw %>% nrow
 
 data.raw <- data.raw %>%
   rename(
+    id = caso,
+    exposure = ivl,
   ) %>%
   select(
     everything(),
@@ -35,15 +37,30 @@ data.raw <- data.raw %>%
 
 data.raw <- data.raw %>%
   mutate(
-    id = factor(id), # or as.character
+    id = as.character(id), # or as.factor
+    # exposure = factor(exposure, labels = c("Sem invasão", "IVL")),
+    # obito = factor(obito, labels = c("Não", "Óbito")),
+    grau = factor(grau),
+    cm = factor(cm),
   )
 
 # labels ------------------------------------------------------------------
 
 data.raw <- data.raw %>%
   set_variable_labels(
-    exposure = "Study exposure",
-    outcome = "Study outcome",
+    exposure = "IVL",
+    # outcome = "Study outcome",
+    obito = "Óbito",
+    grau = "Grau",
+    cm = "CM=4",
+    dvl_it = "DVL (IT)",
+    dvl_pt= "DVL (PT)",
+    p_t = "pT",
+    p_m = "pM",
+    p_n = "pM",
+    tu = "Tamanho do tumor (mm)",
+    num_linf = "Número de linfonodos",
+    ki67 = "KI67",
   )
 
 # analytical dataset ------------------------------------------------------
@@ -53,8 +70,9 @@ analytical <- data.raw %>%
   select(
     id,
     exposure,
-    outcome,
+    obito,
     everything(),
+    -diagnostico,
   )
 
 Nvar_final <- analytical %>% ncol

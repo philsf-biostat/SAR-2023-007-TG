@@ -1,8 +1,8 @@
 ---
-title: "[title]"
+title: "Associação entre invasão vascular linfática na mortalidade e densidade vascular linfática em pacientes com câncer de mama: estudo transversal"
 subtitle: 'DOCUMENTO: SAR-2023-007-TG-v01'
-author: '**De:** Felipe Figueiredo **Para:** ___'
-date: "`r Sys.Date()`"
+author: '**De:** Felipe Figueiredo **Para:** Teresa Gutman'
+date: "2023-02-06"
 output:
   html_document:
     fig_caption: yes
@@ -37,7 +37,7 @@ panderOptions('table.split.table', 160)
 
 \newpage
 
-**[title]**
+**Associação entre invasão vascular linfática na mortalidade e densidade vascular linfática em pacientes com câncer de mama: estudo transversal**
 
 **Histórico do documento**
 
@@ -62,25 +62,25 @@ source("scripts/results.R", encoding = 'UTF-8')
 
 ## Objetivos
 
-## Recepção e tratamento dos dados
+<!-- ## Recepção e tratamento dos dados -->
 
 # Metodologia
 
-<!-- Os procedimentos de limpeza de dados, desenho do estudo e métodos de análise usados neste relatório estão descritos no documento anexo **SAP-2023-007-TG-v01**. -->
+Os procedimentos de limpeza de dados, desenho do estudo e métodos de análise usados neste relatório estão descritos no documento anexo **SAP-2023-007-TG-v01**.
 
-## Parâmetros do estudo
+<!-- ## Parâmetros do estudo -->
 
-### Desenho do estudo
+<!-- ### Desenho do estudo -->
 
-### Critérios de inclusão e exclusão
+<!-- ### Critérios de inclusão e exclusão -->
 
-### Exposições
+<!-- ### Exposições -->
 
-### Desfechos
+<!-- ### Desfechos -->
 
-### Covariáveis
+<!-- ### Covariáveis -->
 
-## Análises Estatísticas
+<!-- ## Análises Estatísticas -->
 
 Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
 
@@ -97,7 +97,12 @@ tab_desc %>%
 
 ```{r fig1, fig.cap="**Figura 1** caption"}
 # ![Age](../figures/outcome.png)
-# knitr::include_graphics("../figures/outcome.png", error = FALSE)
+knitr::include_graphics("../figures/cat.png", error = FALSE)
+```
+
+```{r fig2, fig.cap="**Figura 2** caption"}
+# ![Age](../figures/outcome.png)
+knitr::include_graphics("../figures/num.png", error = FALSE)
 ```
 
 ## Análise inferencial
@@ -115,7 +120,7 @@ tab_inf %>%
 
 # Referências
 
-- **SAP-2023-007-TG-v01** -- Plano Analítico para [title]
+- **SAP-2023-007-TG-v01** -- Plano Analítico para Associação entre invasão vascular linfática na mortalidade e densidade vascular linfática em pacientes com câncer de mama: estudo transversal
 
 # Apêndice
 
