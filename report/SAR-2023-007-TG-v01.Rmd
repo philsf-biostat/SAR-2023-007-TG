@@ -154,7 +154,12 @@ A distribuição do grau do tumor foi significativamente diferente entre os grup
 (`r inline_text(tab_inf, grau, column = p.value)`), assim como os estadiamentos
 pT (`r inline_text(tab_inf, p_t, column = p.value)`) e
 pN (`r inline_text(tab_inf, p_n, column = p.value)`).
-O tamanho do tumor e o número de linfonodos parecem ser maiores no grupo IVL positivo.
+O tamanho do tumor e o número de linfonodos parecem ser maiores no grupo IVL positivo
+(`r inline_text(tab_inf, tu, column = p.value)`
+e
+`r inline_text(tab_inf, num_linf, column = p.value)`,
+respectivamente).
+Nesta amostra não foi possível detectar diferença no CM=4 nem no KI67.
 
 # Observações e limitações
 
