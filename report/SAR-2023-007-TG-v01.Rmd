@@ -164,6 +164,11 @@ Nesta amostra não foi possível detectar diferença no CM=4 nem no KI67.
 
 # Observações e limitações
 
+**Análise univariada**
+
+As comparações entre grupos nesta análise não combinam a variabilidade *entre* variáveis, estando portanto sujeita à viés e confundimento devido a relações entre as variáveis.
+Recomenda-se considerar o uso de análises multivariadas para controlar efeitos de correlação entrecovariáveis.
+
 **Guideline recomendado de relato completo**
 
 A adoção dos guidelines de relato da rede EQUATOR (<http://www.equator-network.org/>) têm sido ampliada em revistas científicas.
