@@ -94,6 +94,17 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 ## População do estudo e acompanhamento
 
+No total foram incluídos `r Nobs_final` participantes na análise, dos quais
+`r inline_text(tab_desc, variable = exposure)` compunham o grupo com IVL (Tabela 1).
+A média (DP) de DVL IT observada na amostra de estudo foi `r inline_text(tab_desc, variable = dvl_it)` enquanto a DVL PT foi `r inline_text(tab_desc, variable = dvl_pt)`.
+
+O estadiamento pT com maior prevalência na amostra foi
+`r inline_text(tab_desc, variable = p_t, level = "T2")`,
+o estadiamento pM foi
+`r inline_text(tab_desc, variable = p_n, level = "N3")`
+e a maior parte da amostra não experimentou ocorrência de metástase à distância
+(pN = `r inline_text(tab_desc, variable = p_m, level = "M0")`).
+
 ```{r tab_desc}
 tab_desc %>%
     as_kable(
