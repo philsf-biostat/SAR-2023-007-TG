@@ -94,29 +94,54 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 ## População do estudo e acompanhamento
 
+No total foram incluídos `r Nobs_final` participantes na análise, dos quais
+`r inline_text(tab_desc, variable = exposure)` compunham o grupo com IVL (Tabela 1).
+A média (DP) de DVL IT observada na amostra de estudo foi `r inline_text(tab_desc, variable = dvl_it)` enquanto a DVL PT foi `r inline_text(tab_desc, variable = dvl_pt)`.
+
+O estadiamento pT com maior prevalência na amostra foi
+`r inline_text(tab_desc, variable = p_t, level = "T2")`,
+o estadiamento pM foi
+`r inline_text(tab_desc, variable = p_n, level = "N3")`
+e a maior parte da amostra não experimentou ocorrência de metástase à distância
+(pN = `r inline_text(tab_desc, variable = p_m, level = "M0")`).
+
 ```{r tab_desc}
 tab_desc %>%
     as_kable(
-    caption = "**Tabela 1** caption"
+    caption = "**Tabela 1** Características dos participantes incluídos no estudo."
   )
 ```
 
-```{r fig1, fig.cap="**Figura 1** caption"}
+Na figura 1 vê-se as distribuições dos indicadores categóricos, em ambos os grupos de participantes.
+A mortalidade (obito), pM e CM=4 apresentam distribuições semelhantes em ambos os grupos.
+O grau 0 do tumor não foi observado no grupo livre de IVL, assim como o estadiamento pT=T0.
+Apenas `r inline_text(tab_inf, p_n, level = "N0", column = stat_2)` participante tinha estadiamento pN=N0 no grupo com IVL.
+
+```{r fig1, fig.cap="**Figura 1** Distribuição de ocorrência de cada CM=4, grau do tumor, mortalidade (óbito), e indicadores de estadiamento (pM, pN e pT)."}
 # ![Age](../figures/outcome.png)
 knitr::include_graphics("../figures/cat.png", error = FALSE)
 ```
 
-```{r fig2, fig.cap="**Figura 2** caption"}
+```{r fig2, fig.cap="**Figura 2** Densidade de distribuição da DVL, KI67, número de linfonodos et tamanho do tumor."}
 # ![Age](../figures/outcome.png)
 knitr::include_graphics("../figures/num.png", error = FALSE)
 ```
+
+A figura 2 mostra as densidades das distribuições das variáveis contínuas em cada grupo.
+Ambas DVL exibem acumulações de frequências em tendências centrais semelhantes entre os grupos, assim como o KI-67.
+Apesar da localização da tendência central ser semelhante entre os grupos, tanto a DVL IT como o KI67 parecem ter uma distribuição bimodal no grupo livre de IVL.
+O tamanho do tumor (TU) parece ter sua tendência central em localizações semelhantes em ambos os grupos, mas o grupo IVL positivo parece ter uma distribuição bimodal mais bem definida que o grupo livre de IVL.
+O número de linfonodos acometidos no grupo livre de IVL parece ter uma acumulação substantialmebte maior em números baixos, enquanto o grupo IVL positivo possui uma amplitude maior em sua distribuição.
+
+Diferenças nestas distribuições serão testadas na próxima seção.
+Todas as distribuições apresentam uma assimetria com cauda longa à direita, o que justifica a escolha do teste não paramétrico nos testes de significância.
 
 ## Análise inferencial
 
 ```{r tab_inf}
 tab_inf %>%
     as_kable(
-    caption = "**Tabela 2** caption"
+    caption = "**Tabela 2** Comparação entre os indicadores entre os grupos livre de IVL e IVL positivo."
   )
 ```
 
