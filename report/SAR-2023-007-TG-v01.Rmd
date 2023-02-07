@@ -1,5 +1,5 @@
 ---
-title: "[title]"
+title: "Associação entre invasão vascular linfática na mortalidade e densidade vascular linfática em pacientes com câncer de mama: estudo transversal"
 subtitle: 'DOCUMENTO: SAR-2023-007-TG-v01'
 author: '**De:** Felipe Figueiredo **Para:** Teresa Gutman'
 date: "2023-02-06"
@@ -37,7 +37,7 @@ panderOptions('table.split.table', 160)
 
 \newpage
 
-**[title]**
+**Associação entre invasão vascular linfática na mortalidade e densidade vascular linfática em pacientes com câncer de mama: estudo transversal**
 
 **Histórico do documento**
 
@@ -120,7 +120,7 @@ tab_inf %>%
 
 # Referências
 
-- **SAP-2023-007-TG-v01** -- Plano Analítico para [title]
+- **SAP-2023-007-TG-v01** -- Plano Analítico para Associação entre invasão vascular linfática na mortalidade e densidade vascular linfática em pacientes com câncer de mama: estudo transversal
 
 # Apêndice
 

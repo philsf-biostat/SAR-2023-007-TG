@@ -1,6 +1,6 @@
 ---
-title: '[title]'
-date: ""
+title: 'Associação entre invasão vascular linfática na mortalidade e densidade vascular linfática em pacientes com câncer de mama: estudo transversal'
+date: "2023-02-06"
 permalink: /portfolio/SAR-2023-007/
 redirect_from:
   - /portfolio/SAR-2023-007-TG/
