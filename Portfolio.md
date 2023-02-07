@@ -1,5 +1,5 @@
 ---
-title: 'Associação entre invasão vascular linfática na mortalidade e densidade vascular linfática em pacientes com câncer de mama: estudo transversal'
+title: 'Associação entre invasão vascular linfática na densidade vascular linfática e mortalidade em pacientes com câncer de mama: estudo transversal'
 date: "2023-02-06"
 permalink: /portfolio/SAR-2023-007/
 redirect_from:
@@ -13,7 +13,11 @@ tags:
   - prevalence
 ---
 
-Objetivo
+1. Avaliar a associação entre a invasão vascular linfática e a densidade vascular linfática peritumoral e intratumoral, mensuradas pelo marcador D2-40;
+1. Avaliar a associação entre a invasão vascular linfática e a mortalidade;
+1. Avaliar a associação entre a invasão vascular linfática e indicadores de patológico;
+1. Avaliar a associação entre a invasão vascular linfática e o número de linfonodos acometidos;
+1. Avaliar a associação entre a invasão vascular linfática e o tamanho do tumor.
 
 Análise Estatística para Teresa Gutman (Doutorado UFF, 2023)
 <!-- Relatório técnico para PESSOA (Doutorado UFF, 2023) -->
