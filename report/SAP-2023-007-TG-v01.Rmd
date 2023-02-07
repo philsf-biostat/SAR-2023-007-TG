@@ -58,16 +58,16 @@ kable(history)
 
 # Lista de abreviaturas
 
-- d: tamanho de efeito D de Cohen
-- CV: coeficiente de variação
+- CM=4: Classificação molecular em 4 subtipos
 - DP: desvio padrão
-- HR: razão de risco (*hazards ratio*)
+- DVL: densidade vascular linfática
+- DVL (IT): densidade vascular linfática intratumoral
+- DVL (PT): densidade vascular linfática peritumoral
 - IC: intervalo de confiança
-- IIQ: intervalo interquartílico
-- IMC: índice de massa corpórea
-- IRR: razão de taxas de incidência (*incidence rates ratio*)
-- OR: razão de chances (*odds ratio*)
-- RR: razão de riscos (*risks ratio*)
+- IVL: Invasão vascular linfática
+- pT: Estadiamento patológico pelo tamanho do tumor
+- pM: Estadiamento patológico para metástase à distância
+- pN: Estadiamento patológico pelo n de linfonodos metastáticos
 
 # Contexto
 
