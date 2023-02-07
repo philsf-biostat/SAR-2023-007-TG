@@ -62,7 +62,7 @@ source("scripts/results.R", encoding = 'UTF-8')
 
 ## Objetivos
 
-## Recepção e tratamento dos dados
+<!-- ## Recepção e tratamento dos dados -->
 
 # Metodologia
 
