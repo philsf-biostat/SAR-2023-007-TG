@@ -26,6 +26,17 @@ gg <- analytical %>%
   labs(fill = "IVL") +
   theme_ff()
 
+gg2 <- analytical %>%
+  mutate(
+    obito = factor(obito, labels = c("Não", "Óbito")),
+    exposure = factor(exposure, labels = c("Sem invasão", "IVL")),
+  ) %>%
+  ggplot() +
+  scale_color_brewer(palette = ff.pal) +
+  scale_fill_brewer(palette = ff.pal) +
+  labs(fill = "IVL") +
+  theme_ff()
+
 # plots -------------------------------------------------------------------
 
 gg.num <- gg +
@@ -39,6 +50,35 @@ gg.cat <- gg +
   facet_wrap(~ names_cat, scales = "free", ncol = 2) +
   labs(x = "", y = "")
 
+gg.cm <- gg2 +
+  geom_bar(aes(cm, fill = exposure), position = "fill") +
+  scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
+  labs(x = "", subtitle = attr(analytical$cm, "label"), y = "")
+
+gg.obito <- gg2 +
+  geom_bar(aes(obito, fill = exposure), position = "fill") +
+  scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
+  labs(x = "", subtitle = attr(analytical$obito, "label"), y = "")
+
+gg.grau <- gg2 +
+  geom_bar(aes(grau, fill = exposure), position = "fill") +
+  scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
+  labs(x = "", subtitle = attr(analytical$grau, "label"), y = "")
+
+gg.pt <- gg2 +
+  geom_bar(aes(p_t, fill = exposure), position = "fill") +
+  scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
+  labs(x = "", subtitle = attr(analytical$p_t, "label"), y = "")
+
+gg.pm <- gg2 +
+  geom_bar(aes(p_m, fill = exposure), position = "fill") +
+  scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
+  labs(x = "", subtitle = attr(analytical$p_m, "label"), y = "")
+
+gg.pn <- gg2 +
+  geom_bar(aes(p_n, fill = exposure), position = "fill") +
+  scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
+  labs(x = "", subtitle = attr(analytical$p_n, "label"), y = "")
 
 # cool facet trick from https://stackoverflow.com/questions/3695497 by JWilliman
 # gg +
