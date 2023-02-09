@@ -41,7 +41,7 @@ data.raw <- data.raw %>%
     # exposure = factor(exposure, labels = c("Sem invasão", "IVL")),
     # obito = factor(obito, labels = c("Não", "Óbito")),
     grau = factor(grau),
-    cm = factor(cm),
+    cm = factor(cm, labels = c("Luminal A", "Luminal B", "HER2+", "Triplo negativo")),
   )
 
 # labels ------------------------------------------------------------------
@@ -52,7 +52,7 @@ data.raw <- data.raw %>%
     # outcome = "Study outcome",
     obito = "Óbito",
     grau = "Grau",
-    cm = "CM=4",
+    cm = "Subtipo molecular",
     dvl_it = "DVL (IT)",
     dvl_pt= "DVL (PT)",
     p_t = "pT",
