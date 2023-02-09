@@ -195,11 +195,34 @@ O número de linfonodos e o tamanho do tumor foram maiores no grupo IVL em rela�
 
 ## Análise exploratória de dados
 
-N/A
-
-```{r A1, fig.cap="**Figura A1** Distribuição da idade na população do estudo."}
+```{r A1, fig.cap="**Figura A1** Versão alternativa da Figura 1."}
 # ![Age](../figures/distr_age.png)
-# knitr::include_graphics("../figures/distr_age.png", error = FALSE)
+knitr::include_graphics("../figures/distr_cm.png", error = FALSE)
+```
+
+```{r A2, fig.cap="**Figura A2** Versão alternativa da Figura 1."}
+# ![Age](../figures/distr_age.png)
+knitr::include_graphics("../figures/distr_grau.png", error = FALSE)
+```
+
+```{r A3, fig.cap="**Figura A3** Versão alternativa da Figura 1."}
+# ![Age](../figures/distr_age.png)
+knitr::include_graphics("../figures/distr_obito.png", error = FALSE)
+```
+
+```{r A4, fig.cap="**Figura A4** Versão alternativa da Figura 1."}
+# ![Age](../figures/distr_age.png)
+knitr::include_graphics("../figures/distr_pt.png", error = FALSE)
+```
+
+```{r A5, fig.cap="**Figura A5** Versão alternativa da Figura 1."}
+# ![Age](../figures/distr_age.png)
+knitr::include_graphics("../figures/distr_pm.png", error = FALSE)
+```
+
+```{r A6, fig.cap="**Figura A6** Versão alternativa da Figura 1."}
+# ![Age](../figures/distr_age.png)
+knitr::include_graphics("../figures/distr_pn.png", error = FALSE)
 ```
 
 ## Disponibilidade
